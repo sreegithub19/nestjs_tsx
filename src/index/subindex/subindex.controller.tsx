@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { IndexService } from './index.service';
+import { IndexService } from './subindex.service';
 
 @Controller("/index")
 export class  IndexController {

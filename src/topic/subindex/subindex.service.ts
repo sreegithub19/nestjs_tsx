@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class AppService {
+export class TopicService {
 
   applications(): string {
     return `
@@ -11,26 +11,22 @@ export class AppService {
             WELCOME TO JAVASCRIPT APPLICATIONS!!</h1> 
    <h3 style="text-align:center;"> Click on any of the below JavaScript apps!</h3>
    <div class="parent"> <ul>
-        <li><a href='/calculator'>Calculator</a></li> 
-       <li><a href='/maze'>Maze</a></li>
-        <li><a href='/tic_tac_toe'>Tic-tac-toe</a></li>
-        <li><a href='/clock'>Analogue clock</a></li>
-        <li><a href='/hangman'>Hangman</a></li>
-        <li><a href='/puzzles'>Estonian puzzles</a></li>
-        <li><a href='/sudoku'>Sudoku</a></li>
-        <li><a href='/virtual_keyboard'>Virtual keyboard</a></li>
-	<li><a href='/solitaire'>Solitaire</a></li>
-	<li><a href='/chess'>Chess</a></li>
-	<li><a href='/dino'>Dino</a></li>
-	<li><a href='/sass_'>Sass</a></li>
-	<li><a href='/tilt_maze'>Tilted Maze</a></li>
-	<li><a href='/codepen'>Codepen</a></li>
-   </ul> 
-          <h3>Access <a href='/index'>index</a> apps</h3>
-       <h3>Access <a href='/topic'>topic</a> apps</h3>
-   </div> 
-       </div> 
-       </body> </html>
+        <li><a href='/topic/calculator'>Calculator</a></li> 
+       <li><a href='/topic/maze'>Maze</a></li>
+        <li><a href='/topic/tic_tac_toe'>Tic-tac-toe</a></li>
+        <li><a href='/topic/clock'>Analogue clock</a></li>
+        <li><a href='/topic/hangman'>Hangman</a></li>
+        <li><a href='/topic/puzzles'>Estonian puzzles</a></li>
+        <li><a href='/topic/sudoku'>Sudoku</a></li>
+        <li><a href='/topic/virtual_keyboard'>Virtual keyboard</a></li>
+	<li><a href='/topic/solitaire'>Solitaire</a></li>
+	<li><a href='/topic/chess'>Chess</a></li>
+	<li><a href='/topic/dino'>Dino</a></li>
+	<li><a href='/topic/sass_'>Sass</a></li>
+	<li><a href='/topic/tilt_maze'>Tilted Maze</a></li>
+	<li><a href='/topic/codepen'>Codepen</a></li>
+   </ul> </div> 
+       </div> </body> </html>
     `;
   }
 
