@@ -1,43 +1,42 @@
-import { Injectable } from '@nestjs/common';
-
-@Injectable()
-export class AppService {
-
-  applications(): string {
-    return `
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MarksService = void 0;
+const common_1 = require("@nestjs/common");
+let MarksService = class MarksService {
+    applications() {
+        return `
 <!DOCTYPE html> <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> body, html { height: 100%; margin: 0; } .content { position: absolute; top: 15%; left:25%; background: rgb(0, 0, 0); /* Fallback color */ background: rgba(0, 0, 0, 0.76); /* Black background with 0.5 opacity */ color: #f1f1f1; width: 50%; padding: 20px; } .bg { /* The image used */ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRqNquWxQHJAPgugDwzXokAU_dQUXzknUTA&usqp=CAU"); /* Full height */ height: 100%; /* Center and scale the image nicely */ background-position: center; background-repeat: no-repeat; background-size: cover; } table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } div.parent { text-align: center; } ul { display: inline-block; text-align: left; }</style>
     </head> <body> <div class="bg"></div>  <div class="content"> <h1 id="home" 
         style="text-align: center;font-weight: bold;text-decoration: underline;">
             WELCOME TO JAVASCRIPT APPLICATIONS!!</h1> 
    <h3 style="text-align:center;"> Click on any of the below JavaScript apps!</h3>
    <div class="parent"> <ul>
-        <li><a href='/calculator'>Calculator</a></li> 
-       <li><a href='/maze'>Maze</a></li>
-        <li><a href='/tic_tac_toe'>Tic-tac-toe</a></li>
-        <li><a href='/clock'>Analogue clock</a></li>
-        <li><a href='/hangman'>Hangman</a></li>
-        <li><a href='/puzzles'>Estonian puzzles</a></li>
-        <li><a href='/sudoku'>Sudoku</a></li>
-        <li><a href='/virtual_keyboard'>Virtual keyboard</a></li>
-	<li><a href='/solitaire'>Solitaire</a></li>
-	<li><a href='/chess'>Chess</a></li>
-	<li><a href='/dino'>Dino</a></li>
-	<li><a href='/sass_'>Sass</a></li>
-	<li><a href='/tilt_maze'>Tilted Maze</a></li>
-	<li><a href='/codepen'>Codepen</a></li>
-   </ul> 
-          <h3>Access <a href='/index'>index</a> apps</h3>
-       <h3>Access <a href='/topic'>topic</a> apps</h3>
-       <h3>Access <a href='/subject'>subject</a> apps</h3>
-       <h3>Access <a href='/marks'>marks</a> apps</h3>
-   </div> 
-       </div> 
-       </body> </html>
+        <li><a href='/marks/calculator'>Calculator</a></li> 
+       <li><a href='/marks/maze'>Maze</a></li>
+        <li><a href='/marks/tic_tac_toe'>Tic-tac-toe</a></li>
+        <li><a href='/marks/clock'>Analogue clock</a></li>
+        <li><a href='/marks/hangman'>Hangman</a></li>
+        <li><a href='/marks/puzzles'>Estonian puzzles</a></li>
+        <li><a href='/marks/sudoku'>Sudoku</a></li>
+        <li><a href='/marks/virtual_keyboard'>Virtual keyboard</a></li>
+	<li><a href='/marks/solitaire'>Solitaire</a></li>
+	<li><a href='/marks/chess'>Chess</a></li>
+	<li><a href='/marks/dino'>Dino</a></li>
+	<li><a href='/marks/sass_'>Sass</a></li>
+	<li><a href='/marks/tilt_maze'>Tilted Maze</a></li>
+	<li><a href='/marks/codepen'>Codepen</a></li>
+   </ul> </div> 
+       </div> </body> </html>
     `;
-  }
-
-  chess(): string {
-    return `
+    }
+    chess() {
+        return `
 <!DOCTYPE html>
 <html>
 
@@ -1246,10 +1245,9 @@ export class AppService {
 
     </html>
     `;
-  }
-
-  calculator(): string {
-    return `
+    }
+    calculator() {
+        return `
         <html>
     <head>
     <style>
@@ -1488,10 +1486,9 @@ export class AppService {
     </body>
     </html>
     `;
-  }
-
-  maze(): string {
-    return `
+    }
+    maze() {
+        return `
 <html lang="en-GB">
     <head>
       <meta charset="utf-8">
@@ -2289,12 +2286,9 @@ export class AppService {
       </body>
     </html>
     `;
-
-
-  }
-
-  sass_(): string {
-    return `
+    }
+    sass_() {
+        return `
 <!DOCTYPE html>
 <html>
     <head>
@@ -2335,10 +2329,9 @@ body{
     </body>
 </html>
     `;
-  }
-
-  codepen(): string {
-    return `
+    }
+    codepen() {
+        return `
 <!DOCTYPE html>
 <html>
 <head>
@@ -2394,10 +2387,9 @@ body{
 </body>
 </html>
 `;
-  }
-
-  tilt_maze(): string {
-    return `
+    }
+    tilt_maze() {
+        return `
 <!DOCTYPE html>
 <html>
 <head>
@@ -3389,10 +3381,9 @@ function main(timestamp) {
 </body>
 </html>
 `;
-  }
-
-  dino(): string {
-    return `
+    }
+    dino() {
+        return `
     
 <html>
 
@@ -6021,11 +6012,10 @@ html[subframe] body {
 </body>
 
 </html>
-`
-} 
-
-  solitaire(): string {
-    return `
+`;
+    }
+    solitaire() {
+        return `
 <html>
 <head>
         <meta name="viewport" id="metaWidth" content="width=530,user-scalable=no">
@@ -7591,10 +7581,9 @@ html[subframe] body {
 </html>
 
     `;
-  }
-
-  sudoku(): string {
-    return `
+    }
+    sudoku() {
+        return `
     <html>
 <head>
     <!-- Copyright (c) Microsoft Corporation. All Rights Reserved. -->
@@ -9381,10 +9370,9 @@ addEventListener('DOMContentLoaded', initialize, false);
 </body>
 </html>
     `;
-  }
-
-  puzzles(): string {
-    return `
+    }
+    puzzles() {
+        return `
 <!DOCTYPE html>
 <html>
 <head>
@@ -9646,10 +9634,9 @@ return this;
 </body>
 </html>
 `;
-  }
-
-  tic_tac_toe(): string {
-    return     `<!doctype html>
+    }
+    tic_tac_toe() {
+        return `<!doctype html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9779,10 +9766,9 @@ document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click'
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
         </script>
     </body>`;
-  }
-
-  clock(): string {
-    return `
+    }
+    clock() {
+        return `
     
 <!DOCTYPE html>
 <html lang="en">
@@ -9900,11 +9886,10 @@ function drawHand(ctx, pos, length, width){
 }
     </script>
 </body>
-    ` ;
-  }
-
-  hangman(): string {
-    return `
+    `;
+    }
+    hangman() {
+        return `
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10085,11 +10070,10 @@ startGame()
     </script>
 </body>
 </html>
-    ` ;
-  }
-
-  virtual_keyboard(): string {
-    return `<!DOCTYPE html>
+    `;
+    }
+    virtual_keyboard() {
+        return `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -10302,6 +10286,10 @@ startGame()
     </script>
     </html>
     `;
-  }
- 
-}
+    }
+};
+MarksService = __decorate([
+    (0, common_1.Injectable)()
+], MarksService);
+exports.MarksService = MarksService;
+//# sourceMappingURL=subindex.service.js.map
