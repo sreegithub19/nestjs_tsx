@@ -33,7 +33,7 @@ Deployment :
 
   (All in one command):
 
-  - git add . && git commit -m "Changes" && git push origin main && npm run build && vercel --prod
+  -- git add . && git commit -m "Changes" && git push origin main && npm run build && vercel --prod
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
